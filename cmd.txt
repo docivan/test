@@ -1,0 +1,6 @@
+git add vr.html
+git commit -m "v0.10"
+GIT_COMMITTER_DATE="2018-03-19 06:47:00 +0100" git commit --amend --no-edit --date="2018-03-19 06:47:00 +0100"
+...
+git remote add origin https://github.com/docivan/js-vr.git
+git push -u origin master
