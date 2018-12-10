@@ -6,13 +6,40 @@ git status
 git log
 
 ### adds and commits:
+
 #this basically stages the file in its current state for a commit
-#if further changes are made - shou
+#if further changes are made - should be re-run
+#otherwise the file version at the time of the last "add" command will be used instead
 git add vr.html
+
 git commit -m "v0.10"
 
-#edit date of last commit
+# pushes on to remote (current branch)
+git push
+
+# edit date of last commit
 GIT_COMMITTER_DATE="2018-03-19 06:47:00 +0100" git commit --amend --no-edit --date="2018-03-19 06:47:00 +0100"
 
+### initialising a remote repo
 git remote add origin https://github.com/docivan/js-vr.git
 git push -u origin master
+
+### branching
+
+# output overview branches, marking current branch
+git branch
+
+# switch to branch
+git checkout branchname
+
+# merge branchname with current branch
+git merge branchname
+
+# push current origin onto server as branch "branchname"
+git push origin nb
+
+# delete the branch locally
+git commit -d branchname
+
+# delete the branch remotely
+git push origin -d branchname
