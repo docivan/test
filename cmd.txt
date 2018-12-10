@@ -36,7 +36,11 @@ git checkout branchname
 git merge branchname
 
 # push current origin onto server as branch "branchname"
-git push origin nb
+git push origin branchname
+
+# push current origin onto server and choose it as upstream
+# then git push will automatically push to this branch
+git push --set-upstream origin branchname
 
 # delete the branch locally
 git commit -d branchname
