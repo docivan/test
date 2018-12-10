@@ -1,6 +1,18 @@
+GIT COMMAND CHEAT SHEET
+
+### basic
+git init
+git status
+git log
+
+### adds and commits:
+#this basically stages the file in its current state for a commit
+#if further changes are made - shou
 git add vr.html
 git commit -m "v0.10"
+
+#edit date of last commit
 GIT_COMMITTER_DATE="2018-03-19 06:47:00 +0100" git commit --amend --no-edit --date="2018-03-19 06:47:00 +0100"
-...
+
 git remote add origin https://github.com/docivan/js-vr.git
 git push -u origin master
